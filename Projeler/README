@@ -20,9 +20,9 @@ Modelin genel doğruluk oranı hesaplanmıştır.
 Confusion matrix görselleştirilerek, her sınıf için doğru ve yanlış sınıflandırmalar detaylı biçimde incelenmiştir.
 
 Sonuçlar
-Model, test verisi üzerinde belirli bir doğruluk oranı elde etmiştir. Ölçüm süresi bilgileri, modelin eğitim ve test aşamalarının verimliliğini ortaya koymaktadır. 
-Confusion matrix görselleştirmesi sayesinde; hangi sınıfların doğru sınıflandırıldığı, hangi sınıfların ise karıştırıldığı net olarak gözlemlenmiştir. 
-Bu görsel, sınıf dağılımı ve hatalı sınıflandırmalar hakkında derinlemesine bilgi sağlamaktadır.
+Model, test verisi üzerinde %77-79 gibi yeterli bir doğruluk oranı elde etmiştir. Sklearn kullandığımız kodda test süresinin çok daha kısa ve eğitimin daha uzun olduğu,sklearn 
+kullanmadığımızda ise test süresinin daha kısa ancak eğitimin daha uzun olduğunu ve sonucun yok sayılabilir derecede daha iyi olduğunu görüyoruz. 
+Confusion matrix görselleştirmesi sayesinde; hangi sınıfların doğru sınıflandırıldığı, hangi sınıfların ise karıştırıldığı da net olarak gözlemlenmiştir. 
 
 Tartışma
 Performans değerlendirmesinde kullanılan temel metrikler; doğruluk oranı ve confusion matrix'tir. Ancak, değerlendirme metrikleri seçiminde problem yapısı ve sınıf dağılımı kritik öneme sahiptir.
