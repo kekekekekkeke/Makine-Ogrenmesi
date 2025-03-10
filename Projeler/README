@@ -1,0 +1,35 @@
+Giriş
+Bu çalışma, öğrencilerin depresyon durumunu belirlemek için bir makine öğrenmesi modeli geliştirmeyi amaçlamaktadır. 
+Depresyon tanısı, öğrencilerin akademik performansı ve genel yaşam kalitesi üzerinde önemli etkiler yaratabileceğinden, erken teşhis ve müdahale kritik önem taşımaktadır.
+Çalışmada, Naive Bayes sınıflandırıcısı kullanılarak, psikososyal ve akademik özelliklere dayanarak depresyon tahmini yapılmaktadır.
+
+Yöntemler
+Veri seti; akademik baskı, çalışma baskısı, ders memnuniyeti, uyku süresi, beslenme alışkanlıkları, finansal stres ve ailede ruhsal hastalık geçmişi gibi özellikleri içermektedir.
+
+Veri Ön İşleme:
+Eksik veriler, sayısal sütunlar için ortalama değer ile doldurulmuştur.
+Kategorik değişkenler, LabelEncoder veya manuel yöntemlerle sayısallaştırılmıştır.
+Min-Max normalizasyonu uygulanarak tüm sayısal veriler 0-1 aralığına ölçeklendirilmiştir.
+
+Model Eğitimi ve Testi:
+Gaussian Naive Bayes modeli, scikit-learn veya sıfırdan Python ile geliştirilmiştir.
+Eğitim (fit) ve test (predict) işlemleri, time modülü kullanılarak süreleri ölçülmüştür.
+
+Performans Ölçümü:
+Modelin genel doğruluk oranı hesaplanmıştır.
+Confusion matrix görselleştirilerek, her sınıf için doğru ve yanlış sınıflandırmalar detaylı biçimde incelenmiştir.
+
+Sonuçlar
+Model, test verisi üzerinde belirli bir doğruluk oranı elde etmiştir. Ölçüm süresi bilgileri, modelin eğitim ve test aşamalarının verimliliğini ortaya koymaktadır. 
+Confusion matrix görselleştirmesi sayesinde; hangi sınıfların doğru sınıflandırıldığı, hangi sınıfların ise karıştırıldığı net olarak gözlemlenmiştir. 
+Bu görsel, sınıf dağılımı ve hatalı sınıflandırmalar hakkında derinlemesine bilgi sağlamaktadır.
+
+Tartışma
+Performans değerlendirmesinde kullanılan temel metrikler; doğruluk oranı ve confusion matrix'tir. Ancak, değerlendirme metrikleri seçiminde problem yapısı ve sınıf dağılımı kritik öneme sahiptir.
+
+Sınıf Dengesizliği:
+Eğer veri setinde sınıflar arasında belirgin bir dengesizlik varsa, doğruluk oranı yanıltıcı olabilir. Örneğin, azınlık sınıfı düşük tahmin edilse bile genel doğruluk yüksek çıkabilir.
+Ek Metrikler:
+Bu gibi durumlarda, precision (kesinlik), recall (duyarlılık) ve F1-score gibi metrikler de göz önünde bulundurulmalıdır. Bu metrikler, özellikle azınlık sınıfının performansını daha iyi yansıtarak modelin gerçek başarısını ortaya koyar.
+Confusion Matrix'in Rolü:
+Confusion matrix, her sınıf için doğru ve yanlış sınıflandırmaları detaylı olarak sunarak, modelin hangi sınıflarda hata yaptığını net bir şekilde ortaya koyar. Bu nedenle, modelin değerlendirilmesi ve iyileştirilmesi sürecinde önemli bir araçtır.
