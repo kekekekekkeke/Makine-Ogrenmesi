@@ -1,2 +1,2 @@
 # Makine-Ogrenmesi
-Bu repo Makine Öğrenmesi ile yaptığım ve yapacağım projeleri bulunduracaktır.
+Bu repo Makine Öğrenmesi ile ilgili yaptığım ve yapacağım projeleri bulunduracaktır.
